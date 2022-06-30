@@ -43,4 +43,9 @@ tags
 src/Tools/freecad.zip
 tsupdate_stderr.log
 tsupdate_stdout.log
+
+# myself
+.vs
+out
+CMakeSettings.json
 files_to_translate.txt

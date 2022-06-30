@@ -25,6 +25,9 @@ set(FREECAD_VERSION_PATCH "0") # number of patch release (e.g. "4" for the 0.18.
 set(FREECAD_VERSION "${PACKAGE_VERSION_MAJOR}.${PACKAGE_VERSION_MINOR}")
 set(PACKAGE_VERSION "${PACKAGE_VERSION_MAJOR}.${PACKAGE_VERSION_MINOR}.${PACKAGE_VERSION_PATCH}")
 set(PACKAGE_STRING "${PROJECT_NAME} ${PACKAGE_VERSION}")
+set(FREECAD_LIBPACK_DIR "D:\\LocalCoding\\FreeCAD\\Libpack\\FreeCADLibs_12.5.4_x64_VC17\\FreeCADLibs_12.5.4_x64_VC17")
+add_compile_options("$<$<C_COMPILER_ID:MSVC>:/utf-8>")
+add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 
 # include local modules
 include(CheckCXXCompilerFlag)
